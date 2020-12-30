@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Moving Car</title>
+	
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<!-- Header Section -->
+	<header>
+		<h1>Kyle Emmi</h1>
+		<nav>
+			<ul>
+				<li class="active"><a href="index.html">Home</a></li>
+				<li class="active"><a href="about.html">About</a></li>
+				<li class="active"><a href="#">Resume</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<!-- Main Section -->
+	<main>
+		<section class="main_body">
+			<!-- Left Column -->
+			<div class="column">
+				<div class="title_block">
+					<h1>Determining Position of a Car with Doppler</h1>
+					<h2>"Donuts" in a parking lot, with a siren</h2>
+				</div>
+			</div>
+			
+			<!-- Right Column -->
+			<div class="column">
+				<div class="side_block">
+				<h3>Quantitative Engineering Analysis II Course Project</h3>
+				<p>MATLAB code developed to take in two audio files from two sides of a parking lot and plot the path of a car moving in an arbitrary path within the lot. The car was outfitted with a siren for easy pitch recognition of the original and doppler shifted audio.</p>
+				</div>
+			</div>
+		</section>
+		
+		<section class="lower_columns">
+		<!-- Left Column -->
+			<div class="column">
+			<p class="left_text">We began by analyzing audio from one microphone and a straight line path. The pitch noticeably drops and through a fourier transform we were able to find the new pitch and then mathematically determine the radial speed of the car using the difference in tone.</p>
+			</div>
+		
+		<!-- Right Column -->
+			<div class="column">
+			<video src="images/doppler_movie.mp4" controls style="width: 50%;height: auto;display: block;margin: 0 auto 2.5% auto;"></video>
+			</div>
+		</section>
+		
+		<section class="lower_body">
+		<p>We then extended our algorithm by adding a second microphone source. With the second audio source, we could calculate the two radial speeds and by knowing the position of the two microphones relative to each other, we could find the direction that the car was moving (as long as it kept a constant speed).</p>
+			
+		<img src="images/wideshot.jpg" alt="panoramic picture of full scale testing" width="1100" height="230" style="display: block;margin: 0 auto 10% auto;width: 100%;height: auto;">
+		</section>
+		
+		<section class="lower_columns">
+		<!-- Left Column -->
+			<div class="column">
+			<img src="images/donuts.gif" alt="gif of final testing in progress" width="480" height="270" class="lower_column_pictures">
+			</div>
+		
+		<!-- Right Column -->
+			<div class="column">
+			<p style="width: 80%;margin: 6% 20% 0 0;">Using the new source data we took the car out again and drove in a circle in the parking lot. After feeding the audio recordings into MATLAB, we received the plotted path below.</p>
+			</div>
+		</section>
+		
+		<section class="lower_columns">
+		<!-- Left Column -->
+			<div class="column">
+			<p class="left_text">While quite jagged, a rough circle is illustrated. This project was a great learning experience for me as I was able to take a classroom concept and build it out with real world data in a matter of weeks. I also was able to brush up my function writing skills in MATLAB so that my pieces of the project could be folded in with my partner's for a successful final deliverable.</p>
+			</div>
+		
+		<!-- Right Column -->
+			<div class="column">
+			<img src="images/circlegraph.png" alt="graph of plotted path" width="700" height="525" class="lower_column_pictures">
+			</div>
+		</section>
+	</main>
+	
+	<!-- Footer Section -->
+	<footer>
+		<div>
+			<p>Contact me at<br>
+				<a href="mailto:kemmi@olin.edu">kemmi@olin.edu</a></p>
+			<a href="https://www.linkedin.com/in/kyle-emmi"><img src="images/Linkedin.png" alt="Linkedin link" width="192" height="192"></a>
+		</div>
+	</footer>	
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Laser Comm</title>
+	
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<!-- Header Section -->
+	<header>
+		<h1>Kyle Emmi</h1>
+		<nav>
+			<ul>
+				<li class="active"><a href="index.html">Home</a></li>
+				<li class="active"><a href="about.html">About</a></li>
+				<li class="active"><a href="#">Resume</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<!-- Main Section -->
+	<main>
+		<section class="main_body">
+			<!-- Left Column -->
+			<div class="column">
+				<div class="title_block">
+					<h1>Laser Communication System</h1>
+					<h2>Tweets at the speed of light</h2>
+				</div>
+			</div>
+			
+			<!-- Right Column -->
+			<div class="column">
+				<div class="side_block">
+				<h3>Introduction to Sensors, Instrumentation, and Measurements Course Project</h3>
+				<p>AM radio transmission system built as the final project for Olin's introductory circuits class. My partner and I successfully developed a system capable of sending "Tweet" sized messages using Python and a laser pointer from Petco.</p>
+				</div>
+			</div>
+		</section>
+		
+		<section class="lower_columns">
+		<!-- Left Column -->
+			<div class="column">
+			<p class="left_text">Receiver reading the laser's pulses. I was responsible for the design of the various filters that produced a clean signal ready to be decoded.</p>
+			</div>
+		
+		<!-- Right Column -->
+			<div class="column">
+			<img src="images/receiver.jpg" alt="laser radio receiver" width="4032" height="3024" class="lower_column_pictures">
+			</div>
+		</section>
+		
+		<section class="lower_body">
+		<p>My partner and I both worked through the problem of encoding words into a transmittable and able to be parsed form. We eventually settled on using the ASCII form of the message encoded as modulated amplitudes in a sine wave. This wave had beginning and end tags added to it and was sent through the laser at a frequency calculated by the length of the message. The receiving end would clean the signal and convert it back to a square wave of ones and zeros that was then parsed by a Python script for the beginning and end tags. It would then print out the data in between revealing the message.</p>
+		</section>
+		
+		<section class="lower_columns">
+		<!-- Left Column -->
+			<div class="column">
+			<img src="images/board.jpg" alt="picture of whiteboard with filters depicted" width="4032" height="3024" class="lower_column_pictures">
+			</div>
+		
+		<!-- Right Column -->
+			<div class="column">
+			<p class="board_caption">The transmitting and receiving circuits as circuit and block diagrams. The receiver circuit consisted of a photo-diode, a second order band-pass filter, and a square wave generation filter. Building this filter in a way that removed enough noise and was precise enough to pick up the minute changes in voltage from the photo-diode was both a challenge and a fulfilling experience.</p>
+			</div>
+		</section>
+		
+		<section class="lower_body">
+		<p>This project is very special to me in that it seemed like an impossible task at the beginning and yet, through weeks of hard work and incremental development, our goal was achieved. I learned a great deal about Python through peer programming with my partner and put my semester's worth of circuit knowledge to the test. I'm extremely proud of the product that was produced.</p>
+		</section>
+	</main>
+	
+	<!-- Footer Section -->
+	<footer>
+		<div>
+			<p>Contact me at<br>
+				<a href="mailto:kemmi@olin.edu">kemmi@olin.edu</a></p>
+			<a href="https://www.linkedin.com/in/kyle-emmi"><img src="images/Linkedin.png" alt="Linkedin link" width="192" height="192"></a>
+		</div>
+	</footer>	
+</body>
+</html>

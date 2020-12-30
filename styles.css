@@ -15,9 +15,10 @@ header {
 	top: 0px;
 	position: fixed;
 	background-color: #FFFFFF;
+	z-index: 2;
 }
 
-h1 {
+header h1 {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 	font-size: 2em;
 	padding-left: 3em;
@@ -48,14 +49,14 @@ nav ul li {
 	margin-left: 3em;
 }
 
-.home a {
+.activated a {
 	font-size: 1em;
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 	text-decoration: none;
 	color: #4E4E4E;
 }
 
-.about a, .resume a {
+.active a {
 	font-size: 1em;
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 	text-decoration: none;
@@ -63,12 +64,12 @@ nav ul li {
 	transition: color 1s;
 }
 
-.about a:hover, .resume a:hover {
+.active a:hover {
 	color: #4E4E4E;
 }
 
-.image_links {
-	margin-top: 85px;
+main {
+	margin: 85px 0 75px 0;
 	background-image: linear-gradient(white, #A5A5A5);
 }
 
@@ -77,13 +78,7 @@ nav ul li {
 	width: 50%;
 }
 
-.caption {
-	position: relative;
-	text-align: center;
-	color: white;
-}
-
-.column img {
+.link_pic {
 	width: 60%;
 	height: auto;
 	display: block;
@@ -93,9 +88,30 @@ nav ul li {
 	margin-right: auto;
 	}
 
-.column img:hover {
+.link_pic:hover {
 	opacity: 0.4;
 	background-color: #B0B0B0;
+}
+
+.about_block {
+	margin: 0 0 0 25%;
+}
+
+.about_block h2 {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 3em;
+}
+
+.column p {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 1.1em;
+}
+
+.headshot {
+	width: 80%;
+	height: auto;
+	display: block;
+	margin: 75px auto 0 auto;
 }
 
 @media screen and (max-width:600px) {
@@ -104,7 +120,7 @@ nav ul li {
 	}
 }
 
-.image_links:after {
+.main_body:after {
 	content: "";
 	display: table;
 	clear: both;
@@ -131,4 +147,74 @@ footer div a {
 footer div img {
 	width: 15%;
 	height: auto;
+}
+
+/* Info pages styles */
+.title_block {
+	margin: 0 10% 0 25%;
+}
+
+.title_block h1 {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 3em;
+}
+
+.title_block h2 {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 1.5em;
+}
+
+.side_block {
+	margin: 0 25% 0 10%;
+}
+
+.side_block h3 {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 1em;
+}
+
+.lower_body {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	width: 50%;
+	margin: 0 auto 0 auto;
+	text-align: center;
+}
+
+.vert_rocket {
+	width: 7.5%;
+	height: auto;
+	float: right;
+	margin: 0 15% 0 0;
+}
+
+.lower_column_pictures {
+	width: 50%;
+	height: auto;
+	display: block;
+	margin: 0 auto 0 auto;
+}
+
+.right_text {
+	display: block;
+	margin: 25% 20% 0 0;
+	width: 80%;
+}
+
+.board_caption {
+	display: block;
+	margin: 5% 20% 0 0;
+	width: 80%;
+}
+
+.left_text {
+	display: block;
+	margin: 10% 0 0 20%;
+	text-align: right;
+	width: 80%;
+}
+
+.lower_columns:after {
+	content: "";
+	display: table;
+	clear: both;
 }
