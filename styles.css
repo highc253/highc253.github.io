@@ -16,12 +16,16 @@ header {
 	position: fixed;
 	background-color: #FFFFFF;
 	z-index: 2;
+	border-bottom: 1px solid black;	
 }
 
 header h1 {
-	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
-	font-size: 2em;
-	padding-left: 3em;
+    font-family: Arial, Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    font-size: 2em;
+    padding-left: 3em;
+    font-style: normal;
+    font-weight: 400;
+	color: #4E4E4E;
 }
 
 nav {
@@ -69,7 +73,7 @@ nav ul li {
 }
 
 main {
-	margin: 85px 0 75px 0;
+	margin: 79px 0 75px 0;
 	background-image: linear-gradient(white, #A5A5A5);
 }
 
@@ -78,19 +82,67 @@ main {
 	width: 50%;
 }
 
-.link_pic {
+.left_link_pic {
+	width: 60%;
+	height: auto;
+	display: block;
+	margin-top: 3em;
+	margin-bottom: 3em;
+	margin-left: 30%;
+	margin-right: auto;
+	position: relative;
+}
+
+.right_link_pic {
 	width: 60%;
 	height: auto;
 	display: block;
 	margin-top: 3em;
 	margin-bottom: 3em;
 	margin-left: auto;
-	margin-right: auto;
-	}
+	margin-right: 30%;
+	position: relative;
+}
 
-.link_pic:hover {
+.center_picture {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.left_link_pic img {
+	width: 100%;
+	height: auto;
+}
+
+.right_link_pic img {
+	width: 100%;
+	height: auto;
+}
+
+.column a:hover img{
 	opacity: 0.4;
-	background-color: #B0B0B0;
+	background-color: #636363;
+}
+
+.column div:hover .centered_text {
+	opacity: 1;
+	user-select: none;
+}
+
+
+.centered_text {
+	position: absolute;
+	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 1.5em;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	opacity: 0;
+	font-weight: bold;
 }
 
 .about_block {
@@ -105,13 +157,6 @@ main {
 .column p {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 	font-size: 1.1em;
-}
-
-.headshot {
-	width: 80%;
-	height: auto;
-	display: block;
-	margin: 75px auto 0 auto;
 }
 
 @media screen and (max-width:600px) {
@@ -175,6 +220,7 @@ footer div img {
 
 .lower_body {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 1.1em;
 	width: 50%;
 	margin: 0 auto 0 auto;
 	text-align: center;
@@ -188,9 +234,9 @@ footer div img {
 }
 
 .lower_column_pictures {
-	width: 50%;
-	height: auto;
 	display: block;
+	width: 60%;
+	height: auto;
 	margin: 0 auto 0 auto;
 }
 
