@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Thrust Vectoring</title>
+	
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<!-- Header Section -->
+	<header>
+		<h1>Kyle Emmi</h1>
+		<nav>
+			<ul>
+				<li class="active"><a href="index.html">Home</a></li>
+				<li class="active"><a href="about.html">About</a></li>
+				<li class="active"><a href="https://drive.google.com/file/d/1roavLAPsInnMc_4JaTR4IYAMrN-tJE1e/view?usp=sharing">Resume</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<!-- Main Section -->
+	<main>
+		<section class="main_body">
+			<!-- Left Column -->
+			<div class="column">
+				<div class="title_block">
+					<h1>Thrust Vectoring Mechanism</h1>
+					<h2>M Class Solid Rocket</h2>
+				</div>
+			</div>
+			
+			<!-- Right Column -->
+			<div class="column">
+				<div class="side_block">
+				<h3>Mechanical Design Course Project</h3>
+				<p>A final, comprehensive design project incorporating full CAD assembly, FEA on multiple components, and dynamic analysis through Solidworks Motion. The system went through multiple revisions advised by both analysis results and course feedback culminating in a final design with renderings.</p>
+				</div>
+			</div>
+		</section>
+		<section class="lower_columns">
+		<!-- Left Column -->
+			<div class="column">
+			<img src="images/ThrustVectorSketch.jpg" alt="early sketch of pivot assembly parts" width="2465" height="2036" class="lower_column_pictures" style="margin-top: 5%;">
+			</div>
+		
+		<!-- Right Column -->
+			<div class="column">
+			<p style="width: 80%;margin: 15% 20% 0 0;">Initial sketch of the pivoting system. A series of three rings with two pivot axes allow the motor to move pitch and yaw. The outermost ring is fixed to the vehicle's interior while the innermost ring is fixed to the motor tube that in turn constrains the motor in a traditional high powered model rocket. Two small servos control the motor's motion via music wire links.</p>
+			</div>
+		</section>
+		
+		<section class="lower_columns">
+		<!-- Left Column -->
+			<div class="column">
+			<p style="text-align: right;width: 80%;margin: 15% 0 0 20%;">CAD of the secondary assembly above the pivot mechanism. This upper ring holds three cams that when turned form a solid structural link between the motor tube and the vehicle body, preventing any unintended pivoting. This feature is useful in the first moments of flight while the rocket is still affixed to the launch rail and no thrust deviations should occur. In addition to the cams, this ring also supports the cam driving motors and a passthrough for wires from all servos on this ring and the pivot mechanism below.</p>
+			</div>
+		
+		<!-- Right Column -->
+			<div class="column">
+			<img src="images/ThrustVectorCams.PNG" alt="render of locking cams assembly" width="551" height="453" class="lower_column_pictures" style="margin-top: 7%;">
+			</div>
+		</section>
+		
+		<section class="lower_columns">
+		<!-- Left Column -->
+			<div class="column">
+			<img src="images/ThrustVectorAssyRender.png" alt="Final render of entire assembly" width="1280" height="720" class="lower_column_pictures" style="margin-top: 10%;">
+			</div>
+		
+		<!-- Right Column -->
+			<div class="column">
+			<p style="width: 80%;margin: 16% 20% 0 0;">Final render of the entire assembly using PhotoView 360. The outer body tube has been made translucent for enhanced viewing of the internal parts that make up the bulk of the assembly.</p>
+			</div>
+		</section>
+		
+		<section class="lower_columns">
+		<!-- Left Column -->
+			<div class="column">
+			<p style="width: 80%;margin: 15% 0 0 20%; text-align: right;">Results of the FEA for the pivot shafts. These shafts had to be designed to comfortably take all of the 419 pounds of force the motor would deliver at its peak force. That force would be divided between two pivots on opposite sides of each ring however multiple iterations of the design needed to be explored in order to raise the FOS to an acceptable level. I looked into different materials in addition to raising the diameter of the pins and a combination of both was needed in the end to take the expected load.<br><br> These FEA studies were undertaken after I drew up free body diagrams and confirmed that the forces I was planning to feed into the FEA were correct. These analyses were also backed up by motion analysis through Solidworks Motion to check for any additional dynamic effects not picked up from a purely static analysis.</p>
+			</div>
+		
+		<!-- Right Column -->
+			<div class="column">
+			<img src="images/ThrustVectorFEA1.png" alt="final assembly of car" width="544" height="332" class="lower_column_pictures" style="margin-top: 7.5%;">
+				
+			<img src="images/ThrustVectorFEA2.png" alt="FEA stress results on pivot axle" width="416" height="277" class="lower_column_pictures">
+			</div>
+		</section>
+	</main>
+	
+	<!-- Footer Section -->
+	<footer>
+		<div>
+			<p>Contact me at<br>
+				<a href="mailto:kemmi@olin.edu">kemmi@olin.edu</a></p>
+			<a href="https://www.linkedin.com/in/kyle-emmi"><img src="images/Linkedin.png" alt="Linkedin link" width="192" height="192"></a>
+		</div>
+	</footer>	
+</body>
+</html>
